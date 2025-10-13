@@ -1,0 +1,23 @@
+casa-thereza-anjo-dos-animais/
+├─ pages/
+│  ├─ index.js
+│  ├─ sobre.js
+│  ├─ adocao.js
+│  ├─ ajudar.js
+│  ├─ galeria.js
+│  ├─ eventos.js
+│  └─ contato.js
+├─ components/
+│  ├─ Header.js
+│  ├─ Footer.js
+│  └─ Layout.js
+├─ public/
+│  └─ animais/
+│      ├─ cachorro1.jpg
+│      ├─ gato1.jpg
+│      └─ coelho1.jpg
+├─ styles/
+│  └─ globals.css
+├─ tailwind.config.js
+├─ package.json
+└─ next.config.js
