@@ -1,18 +1,20 @@
-import Layout from '../components/Layout'
-import Image from 'next/image'
+import Layout from "../components/Layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <Layout>
-      <section className="text-center">
-        <h2 className="text-4xl font-bold text-primary mb-4">
-          Bem-vindo à Casa da Thereza Anjo dos Animais 🐶🐱
-        </h2>
-        <p className="max-w-2xl mx-auto mb-8">
-          Um lar cheio de amor, cuidado e esperança. Aqui, cada patinha tem uma história e um novo começo.
+      <section className="text-center py-10">
+        <h2 className="text-4xl font-bold mb-4">Bem-vindo à Casa Thereza 🐾</h2>
+        <p className="text-lg mb-6 max-w-xl mx-auto">
+          Um espaço de amor, cuidado e esperança para cães, gatos e coelhos que procuram um lar.
         </p>
-        <Image src="/animais/cachorro1.jpg" alt="Cachorro feliz" width={600} height={400} className="rounded-xl mx-auto shadow-lg" />
+        <div className="flex justify-center gap-4 flex-wrap">
+          <Image src="/animais/cachorro_001.jpg" alt="Cachorro feliz" width={250} height={250} className="rounded-lg shadow-lg"/>
+          <Image src="/animais/gato_001.jpg" alt="Gato fofo" width={250} height={250} className="rounded-lg shadow-lg"/>
+          <Image src="/animais/coelho_001.jpg" alt="Coelho fofo" width={250} height={250} className="rounded-lg shadow-lg"/>
+        </div>
       </section>
     </Layout>
-  )
+  );
 }
