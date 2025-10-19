@@ -8,7 +8,7 @@ export default function Ajudar() {
         Você pode contribuir de várias formas: doações, voluntariado ou apadrinhamento de um animal.
       </p>
       <ul className="list-disc ml-6 mt-3">
-        <li>Doações via PIX: <strong>27350504837</strong></li>
+        <li>Doações via PIX: <strong>cpf-273505048-37-thereza-candida-rodrigues</strong></li>
         <li>Voluntariado presencial aos fins de semana</li>
         <li>Doação de ração, medicamentos e produtos de limpeza</li>
       </ul>
