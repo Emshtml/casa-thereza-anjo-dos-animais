@@ -2,7 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-secondary text-gray-800;
-  font-family: 'Inter', sans-serif;
+/* ==========================================================
+   🌈 TEMA PROMOCIONAL — Casa Thereza Anjo dos Animais
+   ========================================================== */
+
+:root {
+  --color-primary: #2D8F6C;    /* Verde natureza */
+  --color-secondary: #F5A623;  /* Laranja empatia */
+  --color-accent: #FFF8F1;     /* Creme acolhedor */
+  --text-primary: #1F2937;     /* Cinza escuro */
+  --text-light: #FFFFFF;       /* Branco */
 }
+
+body {
+  @apply bg-[var(--color-accent)] text-[var(--text-primary)] font-sans leading-relaxed;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header-promo {
+  @apply bg-[var(--color-primary)] text-[var(--text-light)] py-4 px-6 flex justify-between items-center shadow-lg;
+}
+.header-logo {
+  @apply text-2xl font-bold tracking-wide;
+}
+.header-nav a {
+  @apply mx-3 text-[var(--text-light)] hover:underline transition;
+}
+
+/* BOTÕES */
+.btn-primary {
+  @apply inline-block bg-[var(--color-secondary)] text-[var(--text-light)] px-6 py-3 rounded-full font-semibold shadow-lg
+  hover:scale-105 hover:brightness-110 transition-all duration-200;
+}
+.btn-outline {
+  @apply border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-2 rounded-full font-semibold
+  hover:bg-[var(--color-primary)] hover:text-[var(--text-light)] transition-all duration-200;
+}
+
+/* CARDS */
+.card-animal {
+  @apply bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105 hover:shadow-xl;
+}
+.card-animal-img {
+  @apply w-full h-56 object-cover;
+}
+.card-animal-body {
+  @apply p-4 text-center;
+}
+.card-animal-title {
+  @apply font-bold text-lg text-[var(--text-primary)];
+}
+
+/* SEÇÕES */
+.section-highlight {
+  @apply py-16 px-4 bg-[var(--color-accent)] text-center;
+}
+.section-dark {
+  @apply py-16 px-4 bg-[var(--color-primary)] text-[var(--text-light)];
+}
+
+/* TIPOGRAFIA */
+.title-large {
+  @apply text-4xl font-bold text-[var(--color-primary)] mb-6;
+}
+.title-section {
+  @apply text-3xl font-semibold mb-4 text-[var(--color-primary)];
+}
+
+/* FOOTER */
+.footer {
+  @apply bg-[var(--color-primary)] text-[var(--text-light)] text-center py-4 mt-10;
+}
+
