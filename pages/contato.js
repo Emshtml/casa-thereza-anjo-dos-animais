@@ -8,8 +8,8 @@ export default function Contato() {
         <p className="text-lg mb-4">
           Fale conosco para adotar, ajudar ou conhecer o projeto!
         </p>
-        <p>Email: <a href="mailto:contato@casathereza.org" className="text-blue-600">contato@casathereza.org</a></p>
-        <p>WhatsApp: <a href="https://wa.me/5500000000000" className="text-green-600">Clique aqui</a></p>
+        <p>Email: <a href="mailto:contato@casadathereza1@gmail.com" className="text-blue-600">contato@casadathereza1@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/55954626174" className="text-green-600">Clique aqui</a></p>55954626174
       </section>
     </Layout>
   );
