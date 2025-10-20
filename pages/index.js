@@ -1,52 +1,68 @@
 import Layout from "../components/Layout";
+import Image from "next/image";
 
 export default function Home() {
   const animais = [
-    { nome: "Fiona", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Fiona 1.jpg" },
-    { nome: "Fiona", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Fiona 2.jpg" },
-    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia2.jpg" },
-    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia3.jpg" },
-    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia4.jpg" },
-    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia6.jpg" },
-    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia_gorducho.jpg" },
-    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha1.jpg" },
-    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha2.jpg" },
-    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha3.jpg" },
+    { nome: "Fiona", alt: "Fiona 1", src: "/animais/fiona1.jpg" },
+    { nome: "Fiona", alt: "Fiona 2", src: "/animais/fiona2.jpg" },
+    { nome: "Mia", alt: "Mia 2", src: "/animais/mia2.jpg" },
+    { nome: "Mia", alt: "Mia 3", src: "/animais/mia3.jpg" },
+    { nome: "Mia", alt: "Mia 4", src: "/animais/mia4.jpg" },
+    { nome: "Mia", alt: "Mia 6", src: "/animais/mia6.jpg" },
+    { nome: "Mia e Gorducho", alt: "Mia e Gorducho", src: "/animais/mia_gorducho.jpg" },
+    { nome: "Vesguinha", alt: "Vesguinha 1", src: "/animais/vesguinha1.jpg" },
+    { nome: "Vesguinha", alt: "Vesguinha 2", src: "/animais/vesguinha2.jpg" },
+    { nome: "Vesguinha", alt: "Vesguinha 3", src: "/animais/vesguinha3.jpg" },
   ];
 
   return (
     <Layout>
       {/* Boas-vindas */}
       <section className="text-center py-12 bg-yellow-50">
-        <h2 className="text-4xl font-bold mb-4">Bem-vindo à Casa da Thereza Anjo dos Animais 🐾</h2>
-        <p className="text-lg max-w-xl mx-auto">
-          Um lar cheio de amor, cuidado e esperança. Aqui, cada patinha tem uma história e um novo começo.
+        <h2 className="text-4xl font-bold mb-4 text-amber-700">
+          🐾 Bem-vindo à Casa Thereza Anjo dos Animais 🐾
+        </h2>
+        <p className="text-lg max-w-2xl mx-auto text-gray-700">
+          Um espaço de amor, cuidado e esperança para cães e gatos que procuram um lar cheio de carinho.
         </p>
       </section>
 
-      {/* Animais */}
+      {/* Grid de animais */}
       <section className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Nossos Animais</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 text-amber-700">
+          Nossos Animais
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
           {animais.map((animal, index) => (
-            <div key={index} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-              <img src={animal.imagem} alt={animal.nome} className="w-full h-48 object-cover"/>
-              <div className="p-4 text-center">
-                <h3 className="text-xl font-semibold">{animal.nome} {animal.emoji}</h3>
-                <p className="text-gray-600">{animal.tipo}</p>
-                <a href="https://wa.me/559999999999" className="inline-block mt-2 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500 transition">
-                  Adotar
-                </a>
-              </div>
+            <div
+              key={index}
+              className="border rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform bg-white"
+            >
+              <Image
+                src={animal.src}
+                alt={animal.alt}
+                width={300}
+                height={300}
+                className="w-full h-64 object-cover"
+              />
+              <p className="mt-2 font-semibold text-amber-800 text-center py-2">{animal.nome}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Link */}
-      <section className="text-center py-8 bg-gray-100">
-        <a href="#todos-animais" className="text-blue-600 font-semibold hover:underline">🐾 Ver todos os animais</a>
-      </section>
+      {/* Footer */}
+      <footer className="text-center py-6 text-gray-500 text-sm bg-gray-100">
+        © 2025 Casa Thereza Anjo dos Animais 🐾<br/>
+        Desenvolvido com ❤️ por Thereza e apoiadores da causa.<br/>
+        <a
+          href="https://casa-thereza-anjo-dos-animais.vercel.app"
+          className="text-blue-500 hover:underline"
+        >
+          Visite o site oficial
+        </a>
+      </footer>
     </Layout>
   );
 }
