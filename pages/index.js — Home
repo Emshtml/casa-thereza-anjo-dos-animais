@@ -17,7 +17,7 @@ export default function Home() {
           {/* Fiona */}
           <div className="w-64">
             <Image
-              src="/animais/Fiona1.jpg"
+              src="/animais/fiona1.jpg"
               alt="Fiona"
               width={300}
               height={300}
@@ -29,7 +29,7 @@ export default function Home() {
           {/* Mia e Gorducho */}
           <div className="w-64">
             <Image
-              src="/animais/MiaeGorducho.jpg"
+              src="/animais/miae-gorducho.jpg"
               alt="Mia e Gorducho"
               width={300}
               height={300}
@@ -41,7 +41,7 @@ export default function Home() {
           {/* Vesguinha */}
           <div className="w-64">
             <Image
-              src="/animais/Vesguinha1.jpg"
+              src="/animais/vesguinha1.jpg"
               alt="Vesguinha"
               width={300}
               height={300}
@@ -53,7 +53,7 @@ export default function Home() {
           {/* Mia 2 */}
           <div className="w-64">
             <Image
-              src="/animais/Mia2.jpg"
+              src="/animais/mia2.jpg"
               alt="Mia"
               width={300}
               height={300}
@@ -65,7 +65,7 @@ export default function Home() {
           {/* Mia 3 */}
           <div className="w-64">
             <Image
-              src="/animais/Mia3.jpg"
+              src="/animais/mia3.jpg"
               alt="Mia descansando"
               width={300}
               height={300}
@@ -77,7 +77,7 @@ export default function Home() {
           {/* Mia 4 */}
           <div className="w-64">
             <Image
-              src="/animais/Mia4.jpg"
+              src="/animais/mia4.jpg"
               alt="Mia curiosa"
               width={300}
               height={300}
