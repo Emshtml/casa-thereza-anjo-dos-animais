@@ -2,76 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ==========================================================
-   🌈 TEMA PROMOCIONAL — Casa Thereza Anjo dos Animais
-   ========================================================== */
-
+/* 🌈 Paleta e base geral */
 :root {
-  --color-primary: #2D8F6C;    /* Verde natureza */
-  --color-secondary: #F5A623;  /* Laranja empatia */
-  --color-accent: #FFF8F1;     /* Creme acolhedor */
-  --text-primary: #1F2937;     /* Cinza escuro */
-  --text-light: #FFFFFF;       /* Branco */
+  --color-primary: #b45309; /* Âmbar forte */
+  --color-secondary: #fef3c7; /* Fundo leve e quente */
+  --color-accent: #f59e0b; /* Destaque */
+  --color-text: #2d2d2d;
+  --color-muted: #6b7280;
+  --font-main: 'Inter', sans-serif;
+  --font-title: 'Poppins', sans-serif;
 }
 
+/* ✨ Corpo geral */
 body {
-  @apply bg-[var(--color-accent)] text-[var(--text-primary)] font-sans leading-relaxed;
-  font-family: 'Inter', sans-serif;
+  @apply bg-[var(--color-secondary)] text-[var(--color-text)] min-h-screen;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* HEADER */
-.header-promo {
-  @apply bg-[var(--color-primary)] text-[var(--text-light)] py-4 px-6 flex justify-between items-center shadow-lg;
-}
-.header-logo {
-  @apply text-2xl font-bold tracking-wide;
-}
-.header-nav a {
-  @apply mx-3 text-[var(--text-light)] hover:underline transition;
+/* 🧭 Cabeçalho */
+header {
+  @apply bg-white shadow-md sticky top-0 z-50;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* BOTÕES */
-.btn-primary {
-  @apply inline-block bg-[var(--color-secondary)] text-[var(--text-light)] px-6 py-3 rounded-full font-semibold shadow-lg
-  hover:scale-105 hover:brightness-110 transition-all duration-200;
-}
-.btn-outline {
-  @apply border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-2 rounded-full font-semibold
-  hover:bg-[var(--color-primary)] hover:text-[var(--text-light)] transition-all duration-200;
+header nav a {
+  @apply text-[var(--color-text)] font-semibold px-4 py-2 rounded-lg transition;
 }
 
-/* CARDS */
-.card-animal {
-  @apply bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105 hover:shadow-xl;
-}
-.card-animal-img {
-  @apply w-full h-56 object-cover;
-}
-.card-animal-body {
-  @apply p-4 text-center;
-}
-.card-animal-title {
-  @apply font-bold text-lg text-[var(--text-primary)];
+header nav a:hover {
+  @apply text-[var(--color-accent)] bg-[var(--color-secondary)];
 }
 
-/* SEÇÕES */
-.section-highlight {
-  @apply py-16 px-4 bg-[var(--color-accent)] text-center;
-}
-.section-dark {
-  @apply py-16 px-4 bg-[var(--color-primary)] text-[var(--text-light)];
+/* 📸 Galeria e imagens */
+img, .next-image {
+  @apply rounded-2xl shadow-lg transition-transform duration-300;
 }
 
-/* TIPOGRAFIA */
-.title-large {
-  @apply text-4xl font-bold text-[var(--color-primary)] mb-6;
-}
-.title-section {
-  @apply text-3xl font-semibold mb-4 text-[var(--color-primary)];
+img:hover {
+  @apply scale-105 shadow-xl;
 }
 
-/* FOOTER */
-.footer {
-  @apply bg-[var(--color-primary)] text-[var(--text-light)] text-center py-4 mt-10;
+/* 🧩 Cartões */
+.card {
+  @apply bg-white rounded-2xl shadow-lg p-5 border border-amber-100 transition-transform duration-300;
 }
+
+.card:hover {
+  @apply scale-[1.03] shadow-xl;
+}
+
+/* 💛 Títulos */
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  @apply text-amber-800;
+}
+
+/* 🧵 Rodapé */
+footer {
+  @apply bg-amber-800 text-white text-center py-6 mt-12;
+  font-family: var(--font-main);
+}
+
+footer a {
+  @apply text-amber-300 hover:text-white transition;
+}
+
+/* 🐾 Botões */
+.btn {
+  @apply bg-amber-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition;
+}
+
+.btn:hover {
+  @apply bg-amber-700 shadow-lg scale-[1.05];
+}
+
+/* 📱 Responsividade extra */
+@media (max-width: 640px) {
+  h1, h2 {
+    @apply text-2xl;
+  }
+
+  .card {
+    @apply p-4;
+  }
+
+  header nav a {
+    @apply px-2 py-1 text-sm;
+  }
+}
+
