@@ -7,72 +7,107 @@
    ========================================================== */
 
 :root {
-  --color-primary: #2D8F6C;    /* Verde natureza */
-  --color-secondary: #F5A623;  /* Laranja empatia */
-  --color-accent: #FFF8F1;     /* Creme acolhedor */
-  --text-primary: #1F2937;     /* Cinza escuro */
-  --text-light: #FFFFFF;       /* Branco */
+  --color-primary: #E39C4C; /* tom dourado suave - asas */
+  --color-secondary: #2E7D32; /* verde do texto/logo */
+  --color-background: #FFF9F3;
+  --color-accent: #FFEFD6;
+  --color-text: #1F2937;
+  --font-main: 'Inter', sans-serif;
+  --font-title: 'Poppins', sans-serif;
 }
 
+/* ================================
+   🌼 BASE GERAL
+   ================================ */
 body {
-  @apply bg-[var(--color-accent)] text-[var(--text-primary)] font-sans leading-relaxed;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
-/* HEADER */
-.header-promo {
-  @apply bg-[var(--color-primary)] text-[var(--text-light)] py-4 px-6 flex justify-between items-center shadow-lg;
-}
-.header-logo {
-  @apply text-2xl font-bold tracking-wide;
-}
-.header-nav a {
-  @apply mx-3 text-[var(--text-light)] hover:underline transition;
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--color-secondary);
 }
 
-/* BOTÕES */
-.btn-primary {
-  @apply inline-block bg-[var(--color-secondary)] text-[var(--text-light)] px-6 py-3 rounded-full font-semibold shadow-lg
-  hover:scale-105 hover:brightness-110 transition-all duration-200;
-}
-.btn-outline {
-  @apply border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-2 rounded-full font-semibold
-  hover:bg-[var(--color-primary)] hover:text-[var(--text-light)] transition-all duration-200;
+a {
+  color: var(--color-secondary);
+  transition: color 0.3s ease;
 }
 
-/* CARDS */
-.card-animal {
-  @apply bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105 hover:shadow-xl;
-}
-.card-animal-img {
-  @apply w-full h-56 object-cover;
-}
-.card-animal-body {
-  @apply p-4 text-center;
-}
-.card-animal-title {
-  @apply font-bold text-lg text-[var(--text-primary)];
+a:hover {
+  color: var(--color-primary);
 }
 
-/* SEÇÕES */
-.section-highlight {
-  @apply py-16 px-4 bg-[var(--color-accent)] text-center;
-}
-.section-dark {
-  @apply py-16 px-4 bg-[var(--color-primary)] text-[var(--text-light)];
-}
-
-/* TIPOGRAFIA */
-.title-large {
-  @apply text-4xl font-bold text-[var(--color-primary)] mb-6;
-}
-.title-section {
-  @apply text-3xl font-semibold mb-4 text-[var(--color-primary)];
+/* ================================
+   🐾 IMAGENS
+   ================================ */
+img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FOOTER */
-.footer {
-  @apply bg-[var(--color-primary)] text-[var(--text-light)] text-center py-4 mt-10;
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* ================================
+   🌸 CABEÇALHO E MENU
+   ================================ */
+header {
+  background: var(--color-primary);
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: var(--color-accent);
+}
+
+/* ================================
+   🐶 SEÇÕES DE CONTEÚDO
+   ================================ */
+section {
+  padding: 2rem 1rem;
+}
+
+section h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ================================
+   🩵 FOOTER
+   ================================ */
+footer {
+  background-color: var(--color-accent);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  border-top: 2px solid var(--color-primary);
+}
+
+/* ================================
+   📱 RESPONSIVIDADE
+   ================================ */
+@media (max-width: 640px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
 
