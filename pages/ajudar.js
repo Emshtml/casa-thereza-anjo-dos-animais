@@ -1,17 +1,31 @@
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
 
 export default function Ajudar() {
   return (
     <Layout>
-      <h2 className="text-2xl font-bold mb-4">Como Ajudar 🐾</h2>
-      <p>
-        Você pode contribuir de várias formas: doações, voluntariado ou apadrinhamento de um animal.
-      </p>
-      <ul className="list-disc ml-6 mt-3">
-        <li>Doações via PIX: <strong>CPF-273505048-37 Thereza Candida Rodrigues</strong></li>
-        <li>Voluntariado presencial aos fins de semana</li>
-        <li>Doação de ração, medicamentos e produtos de limpeza</li>
-      </ul>
+      <section className="py-16 px-4 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl font-bold text-green-700 mb-6"
+        >
+          Como Ajudar 🐾
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="max-w-3xl mx-auto text-lg text-gray-700 mb-6"
+        >
+          Você pode contribuir com doações, trabalho voluntário ou ajudando a divulgar nossos animais disponíveis para adoção. Cada gesto faz a diferença!
+        </motion.p>
+        <div className="flex justify-center gap-6">
+          <a href="#" className="px-6 py-3 bg-green-700 text-white rounded hover:bg-green-800 transition">Doar</a>
+          <a href="#" className="px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600 transition">Voluntariado</a>
+        </div>
+      </section>
     </Layout>
   );
 }
