@@ -1,76 +1,53 @@
-import Layout from '../components/Layout'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
+import Layout from "../components/Layout";
 
 export default function Home() {
+  const animais = [
+    { nome: "Fiona", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Fiona 1.jpg" },
+    { nome: "Fiona", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Fiona 2.jpg" },
+    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia2.jpg" },
+    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia3.jpg" },
+    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia4.jpg" },
+    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia6.jpg" },
+    { nome: "Mia", tipo: "Gato", emoji: "🐱", imagem: "/images/Mia_gorducho.jpg" },
+    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha1.jpg" },
+    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha2.jpg" },
+    { nome: "Vesguinha", tipo: "Cachorro", emoji: "🐶", imagem: "/images/Vesguinha3.jpg" },
+  ];
+
   return (
     <Layout>
-      {/* Seção com gradiente */}
-      <section className="text-center py-16 px-4 bg-gradient-to-b from-green-50 via-green-100 to-green-50">
-        <motion.h2
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl font-bold text-primary mb-4"
-        >
-          Bem-vindo à Casa da Thereza Anjo dos Animais 🐾
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="max-w-2xl mx-auto mb-10 text-lg text-gray-700"
-        >
+      {/* Boas-vindas */}
+      <section className="text-center py-12 bg-yellow-50">
+        <h2 className="text-4xl font-bold mb-4">Bem-vindo à Casa da Thereza Anjo dos Animais 🐾</h2>
+        <p className="text-lg max-w-xl mx-auto">
           Um lar cheio de amor, cuidado e esperança. Aqui, cada patinha tem uma história e um novo começo.
-        </motion.p>
+        </p>
+      </section>
 
-        {/* Galeria animada */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center items-center">
-          {[
-            { src: '/animais/cachorro1.jpg', nome: 'Thor 🐶', alt: 'Cachorro feliz' },
-            { src: '/animais/gato1.jpg', nome: 'Mia 🐱', alt: 'Gato fofo' },
-            { src: '/animais/coelho1.jpg', nome: 'Bento 🐰', alt: 'Coelho feliz' },
-          ].map((animal, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              whileHover={{ scale: 1.05 }}
-              className="flex flex-col items-center"
-              aria-label={`Foto do ${animal.nome}`}
-            >
-              <Image
-                src={animal.src}
-                alt={animal.alt}
-                width={350}
-                height={250}
-                className="rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-                priority={index === 0}
-              />
-              <p className="mt-2 font-medium text-gray-800">{animal.nome}</p>
-            </motion.div>
+      {/* Animais */}
+      <section className="py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Nossos Animais</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+          {animais.map((animal, index) => (
+            <div key={index} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+              <img src={animal.imagem} alt={animal.nome} className="w-full h-48 object-cover"/>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-semibold">{animal.nome} {animal.emoji}</h3>
+                <p className="text-gray-600">{animal.tipo}</p>
+                <a href="https://wa.me/559999999999" className="inline-block mt-2 px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500 transition">
+                  Adotar
+                </a>
+              </div>
+            </div>
           ))}
         </div>
+      </section>
 
-        {/* Botão “Ver todos os animais” */}
-        <motion.div
-          className="mt-12"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.a
-            href="/adocao"
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-primary/90 transition-colors"
-          >
-            🐾 Ver todos os animais
-          </motion.a>
-        </motion.div>
+      {/* Link */}
+      <section className="text-center py-8 bg-gray-100">
+        <a href="#todos-animais" className="text-blue-600 font-semibold hover:underline">🐾 Ver todos os animais</a>
       </section>
     </Layout>
-  )
+  );
 }
+
