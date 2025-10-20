@@ -26,7 +26,10 @@ export default function Header() {
           <Link href="/contato" className="hover:text-[var(--color-secondary)] transition-colors">
             Contato
           </Link>
-        </nav>
+        </nav<a href="/sobre" className="text-primary font-medium hover:text-secondary transition">
+  Sobre
+</a>
+>
       </div>
     </header>
   );
