@@ -5,14 +5,86 @@ export default function Home() {
   return (
     <Layout>
       <section className="text-center py-10">
-        <h2 className="text-4xl font-bold mb-4">Bem-vindo à Casa Thereza 🐾</h2>
-        <p className="text-lg mb-6 max-w-xl mx-auto">
-          Um espaço de amor, cuidado e esperança para cães, gatos e coelhos que procuram um lar.
+        <h2 className="text-4xl font-bold mb-4 text-amber-700">
+          🐾 Bem-vindo à Casa Thereza Anjo dos Animais 🐾
+        </h2>
+
+        <p className="text-lg mb-6 max-w-2xl mx-auto text-gray-700">
+          Um espaço de amor, cuidado e esperança para cães e gatos que procuram um lar cheio de carinho.
         </p>
-        <div className="flex justify-center gap-4 flex-wrap">
-          <Image src="/animais/cachorro_001.jpg" alt="Cachorro feliz" width={250} height={250} className="rounded-lg shadow-lg"/>
-          <Image src="/animais/gato_001.jpg" alt="Gato fofo" width={250} height={250} className="rounded-lg shadow-lg"/>
-          <Image src="/animais/coelho_001.jpg" alt="Coelho fofo" width={250} height={250} className="rounded-lg shadow-lg"/>
+
+        <div className="flex justify-center flex-wrap gap-6 mt-8">
+          {/* Fiona */}
+          <div className="w-64">
+            <Image
+              src="/animais/Fiona1.jpg"
+              alt="Fiona"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Fiona</p>
+          </div>
+
+          {/* Mia e Gorducho */}
+          <div className="w-64">
+            <Image
+              src="/animais/MiaeGorducho.jpg"
+              alt="Mia e Gorducho"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Mia e Gorducho</p>
+          </div>
+
+          {/* Vesguinha */}
+          <div className="w-64">
+            <Image
+              src="/animais/Vesguinha1.jpg"
+              alt="Vesguinha"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Vesguinha</p>
+          </div>
+
+          {/* Mia 2 */}
+          <div className="w-64">
+            <Image
+              src="/animais/Mia2.jpg"
+              alt="Mia"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Mia</p>
+          </div>
+
+          {/* Mia 3 */}
+          <div className="w-64">
+            <Image
+              src="/animais/Mia3.jpg"
+              alt="Mia descansando"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Mia (descansando)</p>
+          </div>
+
+          {/* Mia 4 */}
+          <div className="w-64">
+            <Image
+              src="/animais/Mia4.jpg"
+              alt="Mia curiosa"
+              width={300}
+              height={300}
+              className="rounded-2xl shadow-lg"
+            />
+            <p className="mt-2 font-semibold text-amber-800">Mia (curiosa)</p>
+          </div>
         </div>
       </section>
     </Layout>
