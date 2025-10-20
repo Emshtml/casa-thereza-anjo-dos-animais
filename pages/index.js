@@ -46,7 +46,9 @@ export default function Home() {
                 height={300}
                 className="w-full h-64 object-cover"
               />
-              <p className="mt-2 font-semibold text-amber-800 text-center py-2">{animal.nome}</p>
+              <p className="mt-2 font-semibold text-amber-800 text-center py-2">
+                {animal.nome}
+              </p>
             </div>
           ))}
         </div>
@@ -54,8 +56,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center py-6 text-gray-500 text-sm bg-gray-100">
-        © 2025 Casa Thereza Anjo dos Animais 🐾<br/>
-        Desenvolvido com ❤️ por Thereza e apoiadores da causa.<br/>
+        © 2025 Casa Thereza Anjo dos Animais 🐾<br />
+        Desenvolvido com ❤️ por Thereza e apoiadores da causa.<br />
         <a
           href="https://casa-thereza-anjo-dos-animais.vercel.app"
           className="text-blue-500 hover:underline"
@@ -66,4 +68,5 @@ export default function Home() {
     </Layout>
   );
 }
+
 
