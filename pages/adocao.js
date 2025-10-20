@@ -1,15 +1,38 @@
 import Layout from "../components/Layout";
+import CardAnimal from "../components/CardAnimal";
+import { motion } from "framer-motion";
 
 export default function Adocao() {
+  const animais = [
+    { src: "/animais/fiona1.jpg", nome: "Fiona", alt: "Fiona", descricao: "Cachorrinha amorosa" },
+    { src: "/animais/mia2.jpg", nome: "Mia", alt: "Mia", descricao: "Gatinha brincalhona" },
+    { src: "/animais/vesguinha1.jpg", nome: "Vesguinha", alt: "Vesguinha", descricao: "Coelhinho fofo" },
+  ];
+
   return (
     <Layout>
-      <h2 className="text-2xl font-bold mb-4">Animais para Adoção 💕</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="/animais/cachorro1.jpg" alt="Cachorro" className="rounded-lg shadow" />
-        <img src="/animais/gato1.jpg" alt="Gato" className="rounded-lg shadow" />
-        <img src="/animais/coelho1.jpg" alt="Coelho" className="rounded-lg shadow" />
-      </div>
-      <p className="mt-4">Entre em contato para adotar um novo amigo! 🐶🐱🐰</p>
+      <section className="py-16 px-4 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl font-bold text-green-700 mb-8"
+        >
+          Animais para Adoção 🐶🐱🐰
+        </motion.h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {animais.map((animal, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              <CardAnimal animal={animal} />
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }
