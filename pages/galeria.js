@@ -6,7 +6,7 @@ export default function Galeria() {
   const animais = [
     { src: '/animais/fiona1.jpg', nome: 'Fiona', alt: 'Fiona' },
     { src: '/animais/fiona2.jpg', nome: 'Fiona 2', alt: 'Fiona' },
-    { src: '/animais/mia_gorducho.jpg', nome: 'Mia e Gorducho', alt: 'Mia e Gorducho' },
+    { src: '/animais/mia_gorducho.jpg', nome: 'Mia_Gorducho', alt: 'Mia e Gorducho' },
     { src: '/animais/mia2.jpg', nome: 'Mia 2', alt: 'Mia 2' },
     { src: '/animais/mia3.jpg', nome: 'Mia 3', alt: 'Mia 3' },
     { src: '/animais/mia4.jpg', nome: 'Mia 4', alt: 'Mia 4' },
