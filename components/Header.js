@@ -11,26 +11,39 @@ export default function Header() {
 
         {/* Menu de navegação */}
         <nav className="hidden sm:flex space-x-6 text-[var(--text-light)] font-medium">
-          <Link href="/" className="hover:text-[var(--color-secondary)] transition-colors">
+          <Link
+            href="/"
+            className="hover:text-[var(--color-secondary)] transition-colors"
+          >
             Início
           </Link>
-          <Link href="/sobre" className="hover:text-[var(--color-secondary)] transition-colors">
+          <Link
+            href="/sobre"
+            className="hover:text-[var(--color-secondary)] transition-colors"
+          >
             Sobre
           </Link>
-          <Link href="/adocao" className="hover:text-[var(--color-secondary)] transition-colors">
+          <Link
+            href="/adocao"
+            className="hover:text-[var(--color-secondary)] transition-colors"
+          >
             Adoção
           </Link>
-          <Link href="/ajudar" className="hover:text-[var(--color-secondary)] transition-colors">
+          <Link
+            href="/ajudar"
+            className="hover:text-[var(--color-secondary)] transition-colors"
+          >
             Como Ajudar
           </Link>
-          <Link href="/contato" className="hover:text-[var(--color-secondary)] transition-colors">
+          <Link
+            href="/contato"
+            className="hover:text-[var(--color-secondary)] transition-colors"
+          >
             Contato
           </Link>
-        </nav<a href="/sobre" className="text-primary font-medium hover:text-secondary transition">
-  Sobre
-</a>
->
+        </nav>
       </div>
     </header>
   );
 }
+
