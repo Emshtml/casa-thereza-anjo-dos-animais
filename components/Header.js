@@ -1,44 +1,39 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="header-promo sticky top-0 z-50 shadow-lg backdrop-blur-md bg-[var(--color-primary)] bg-opacity-95">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo / Nome do site */}
-        <Link href="/" className="text-2xl font-bold text-white tracking-wide">
-          🏡 Casa Thereza
+    <header className="sticky top-0 z-50 shadow-md backdrop-blur-md bg-amber-600 bg-opacity-95">
+      <div className="container mx-auto flex justify-between items-center py-3 px-6">
+        {/* Logo com nome do site */}
+        <Link href="/" className="flex items-center space-x-3">
+          <Image
+            src="/logo.png"
+            alt="Logo Casa da Thereza Anjo dos Animais"
+            width={60}
+            height={60}
+            className="rounded-full"
+          />
+          <span className="text-2xl font-bold text-white tracking-wide">
+            Casa da Thereza
+          </span>
         </Link>
 
         {/* Menu de navegação */}
-        <nav className="hidden sm:flex space-x-6 text-[var(--text-light)] font-medium">
-          <Link
-            href="/"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
+        <nav className="hidden sm:flex space-x-6 text-white font-medium">
+          <Link href="/" className="hover:text-yellow-200 transition-colors">
             Início
           </Link>
-          <Link
-            href="/sobre"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
+          <Link href="/sobre" className="hover:text-yellow-200 transition-colors">
             Sobre
           </Link>
-          <Link
-            href="/adocao"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
+          <Link href="/adocao" className="hover:text-yellow-200 transition-colors">
             Adoção
           </Link>
-          <Link
-            href="/ajudar"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
+          <Link href="/ajudar" className="hover:text-yellow-200 transition-colors">
             Como Ajudar
           </Link>
-          <Link
-            href="/contato"
-            className="hover:text-[var(--color-secondary)] transition-colors"
-          >
+          <Link href="/contato" className="hover:text-yellow-200 transition-colors">
             Contato
           </Link>
         </nav>
@@ -46,4 +41,5 @@ export default function Header() {
     </header>
   );
 }
+
 
