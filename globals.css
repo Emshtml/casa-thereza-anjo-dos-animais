@@ -2,95 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌈 Paleta e base geral */
+/* Tema simples e leve */
 :root {
-  --color-primary: #b45309; /* Âmbar forte */
-  --color-secondary: #fef3c7; /* Fundo leve e quente */
-  --color-accent: #f59e0b; /* Destaque */
-  --color-text: #2d2d2d;
-  --color-muted: #6b7280;
   --font-main: 'Inter', sans-serif;
   --font-title: 'Poppins', sans-serif;
 }
 
-/* ✨ Corpo geral */
 body {
-  @apply bg-[var(--color-secondary)] text-[var(--color-text)] min-h-screen;
   font-family: var(--font-main);
-  font-size: 1rem;
-  line-height: 1.6;
+  background-color: #fffaf2;
+  color: #1f2937;
   scroll-behavior: smooth;
 }
 
-/* 🧭 Cabeçalho */
-header {
-  @apply bg-white shadow-md sticky top-0 z-50;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+h1, h2, h3 {
+  font-family: var(--font-title);
 }
 
-header nav a {
-  @apply text-[var(--color-text)] font-semibold px-4 py-2 rounded-lg transition;
-}
-
-header nav a:hover {
-  @apply text-[var(--color-accent)] bg-[var(--color-secondary)];
-}
-
-/* 📸 Galeria e imagens */
-img, .next-image {
-  @apply rounded-2xl shadow-lg transition-transform duration-300;
+img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
-  @apply scale-105 shadow-xl;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 🧩 Cartões */
-.card {
-  @apply bg-white rounded-2xl shadow-lg p-5 border border-amber-100 transition-transform duration-300;
-}
-
-.card:hover {
-  @apply scale-[1.03] shadow-xl;
-}
-
-/* 💛 Títulos */
-h1, h2, h3, h4 {
-  font-family: var(--font-title);
-  @apply text-amber-800;
-}
-
-/* 🧵 Rodapé */
-footer {
-  @apply bg-amber-800 text-white text-center py-6 mt-12;
-  font-family: var(--font-main);
-}
-
-footer a {
-  @apply text-amber-300 hover:text-white transition;
-}
-
-/* 🐾 Botões */
-.btn {
-  @apply bg-amber-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition;
-}
-
-.btn:hover {
-  @apply bg-amber-700 shadow-lg scale-[1.05];
-}
-
-/* 📱 Responsividade extra */
-@media (max-width: 640px) {
-  h1, h2 {
-    @apply text-2xl;
-  }
-
-  .card {
-    @apply p-4;
-  }
-
-  header nav a {
-    @apply px-2 py-1 text-sm;
-  }
-}
 
