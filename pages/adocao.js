@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function Adocao() {
   const animais = [
-    { src: "/animais/fiona1.jpg", nome: "Fiona", alt: "Fiona", descricao: "Cachorrinha amorosa" },
-    { src: "/animais/mia2.jpg", nome: "Mia", alt: "Mia", descricao: "Gatinha brincalhona" },
-    { src: "/animais/vesguinha1.jpg", nome: "Vesguinha", alt: "Vesguinha", descricao: "Coelhinho fofo" },
+    { src: "/animais/fiona1.jpg", nome: "fiona", alt: "fiona", descricao: "Cachorrinha amorosa" },
+    { src: "/animais/mia2.jpg", nome: "mia", alt: "mia", descricao: "Gatinha brincalhona" },
+    { src: "/animais/vesguinha1.jpg", nome: "vesguinha", alt: "vesguinha", descricao: "gatinha  fofa" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function Adocao() {
           transition={{ duration: 0.8 }}
           className="text-4xl font-bold text-green-700 mb-8"
         >
-          Animais para Adoção 🐶🐱🐰
+          Animais para Adoção mia1 fiona1 mia5
         </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {animais.map((animal, index) => (
