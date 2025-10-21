@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Home() {
   const animais = [
-    { nome: "Fiona", alt: "Fiona 1", src: "/animais/fiona1.jpg" },
-    { nome: "Fiona", alt: "Fiona 2", src: "/animais/fiona2.jpg" },
-    { nome: "Mia", alt: "Mia 2", src: "/animais/mia2.jpg" },
-    { nome: "Mia", alt: "Mia 3", src: "/animais/mia3.jpg" },
-    { nome: "Mia", alt: "Mia 4", src: "/animais/mia4.jpg" },
-    { nome: "Mia", alt: "Mia 6", src: "/animais/mia6.jpg" },
-    { nome: "Mia e Gorducho", alt: "Mia e Gorducho", src: "/animais/mia_gorducho.jpg" },
-    { nome: "Vesguinha", alt: "Vesguinha 1", src: "/animais/vesguinha1.jpg" },
-    { nome: "Vesguinha", alt: "Vesguinha 2", src: "/animais/vesguinha2.jpg" },
-    { nome: "Vesguinha", alt: "Vesguinha 3", src: "/animais/vesguinha3.jpg" },
+    { nome: "fiona", alt: "fiona1", src: "/animais/fiona1.jpg" },
+    { nome: "fiona", alt: "fiona2", src: "/animais/fiona2.jpg" },
+    { nome: "mia", alt: "mia2", src: "/animais/mia2.jpg" },
+    { nome: "mia", alt: "mia3", src: "/animais/mia3.jpg" },
+    { nome: "mia", alt: "mia4", src: "/animais/mia4.jpg" },
+    { nome: "mia", alt: "mia6", src: "/animais/mia6.jpg" },
+    { nome: "mia_gorducho", alt: "mia_gorducho", src: "/animais/mia_gorducho.jpg" },
+    { nome: "mesguinha", alt: "vesguinha1", src: "/animais/vesguinha1.jpg" },
+    { nome: "vesguinha", alt: "vesguinha2", src: "/animais/vesguinha2.jpg" },
+    { nome: "vesguinha", alt: "vesguinha 3", src: "/animais/vesguinha3.jpg" },
   ];
 
   return (
