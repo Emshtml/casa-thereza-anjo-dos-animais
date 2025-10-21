@@ -3,48 +3,31 @@
 @tailwind utilities;
 
 /* ==========================================================
-   🌈 TEMA PROMOCIONAL — Casa Thereza Anjo dos Animais
+   🌈 Tema Leve — Casa Thereza Anjo dos Animais
    ========================================================== */
 
 :root {
-  --color-primary: #E39C4C; /* tom dourado suave - asas */
-  --color-secondary: #2E7D32; /* verde do texto/logo */
-  --color-background: #FFF9F3;
-  --color-accent: #FFEFD6;
-  --color-text: #1F2937;
   --font-main: 'Inter', sans-serif;
   --font-title: 'Poppins', sans-serif;
 }
 
-/* ================================
-   🌼 BASE GERAL
-   ================================ */
+/* ===== Corpo geral ===== */
 body {
   font-family: var(--font-main);
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: #fffaf2; /* tom amarelado suave */
+  color: #1f2937; /* cinza escuro */
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+/* ===== Títulos ===== */
+h1, h2, h3, h4, h5 {
   font-family: var(--font-title);
-  color: var(--color-secondary);
+  color: #92400e; /* tom âmbar escuro */
 }
 
-a {
-  color: var(--color-secondary);
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--color-primary);
-}
-
-/* ================================
-   🐾 IMAGENS
-   ================================ */
+/* ===== Imagens ===== */
 img {
   border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,59 +38,48 @@ img:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ================================
-   🌸 CABEÇALHO E MENU
-   ================================ */
-header {
-  background: var(--color-primary);
-  color: white;
+/* ===== Botões ===== */
+button {
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
 }
 
-header a {
-  color: white;
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
-header a:hover {
-  color: var(--color-accent);
+/* ===== Links ===== */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
-/* ================================
-   🐶 SEÇÕES DE CONTEÚDO
-   ================================ */
-section {
-  padding: 2rem 1rem;
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
-section h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-/* ================================
-   🩵 FOOTER
-   ================================ */
+/* ===== Rodapé ===== */
 footer {
-  background-color: var(--color-accent);
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: var(--color-secondary);
-  border-top: 2px solid var(--color-primary);
+  background-color: #fef3c7;
+  color: #6b7280;
 }
 
-/* ================================
-   📱 RESPONSIVIDADE
-   ================================ */
-@media (max-width: 640px) {
-  header {
-    text-align: center;
-  }
-  nav {
-    display: block;
-    margin-top: 0.5rem;
-  }
+/* ===== Grid de animais ===== */
+.card-animal {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-animal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 
