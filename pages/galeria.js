@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 export default function Galeria() {
   const animais = [
-    { src: "/animais/fiona1.jpg", nome: "Fiona", alt: "Fiona" },
-    { src: "/animais/fiona2.jpg", nome: "Fiona 2", alt: "Fiona 2" },
-    { src: "/animais/mia-gorducho.jpg", nome: "Mia e Gorducho", alt: "Mia e Gorducho" },
-    { src: "/animais/mia2.jpg", nome: "Mia 2", alt: "Mia 2" },
-    { src: "/animais/mia3.jpg", nome: "Mia 3", alt: "Mia 3" },
-    { src: "/animais/mia4.jpg", nome: "Mia 4", alt: "Mia 4" },
-    { src: "/animais/mia6.jpg", nome: "Mia 6", alt: "Mia 6" },
-    { src: "/animais/vesguinha1.jpg", nome: "Vesguinha 1", alt: "Vesguinha 1" },
-    { src: "/animais/vesguinha2.jpg", nome: "Vesguinha 2", alt: "Vesguinha 2" },
-    { src: "/animais/vesguinha3.jpg", nome: "Vesguinha 3", alt: "Vesguinha 3" },
+    { src: "/animais/fiona1.jpg", nome: "fiona", alt: "fiona" },
+    { src: "/animais/fiona2.jpg", nome: "Fiona 2", alt: "fiona 2" },
+    { src: "/animais/mia-gorducho.jpg", nome: "mia_grducho", alt: "mia_gorducho" },
+    { src: "/animais/mia2.jpg", nome: "mia2", alt: "mia2" },
+    { src: "/animais/mia3.jpg", nome: "mia3", alt: "mia3" },
+    { src: "/animais/mia4.jpg", nome: "mia4", alt: "mia4" },
+    { src: "/animais/mia6.jpg", nome: "mia6", alt: "mia6" },
+    { src: "/animais/vesguinha1.jpg", nome: "vesguinha 1", alt: "vesguinha1" },
+    { src: "/animais/vesguinha2.jpg", nome: "vesguinha 2", alt: "vesguinha2" },
+    { src: "/animais/vesguinha3.jpg", nome: "vesguinha 3", alt: "vesguinha3" },
   ];
 
   return (
