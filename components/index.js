@@ -10,7 +10,7 @@ export default function Home() {
     { nome: "mia", alt: "mia4", src: "/animais/mia4.jpg" },
     { nome: "mia", alt: "mia6", src: "/animais/mia6.jpg" },
     { nome: "mia_gorducho", alt: "mia_gorducho", src: "/animais/mia_gorducho.jpg" },
-    { nome: "mesguinha", alt: "vesguinha1", src: "/animais/vesguinha1.jpg" },
+    { nome: "vesguinha", alt: "vesguinha1", src: "/animais/vesguinha1.jpg" },
     { nome: "vesguinha", alt: "vesguinha2", src: "/animais/vesguinha2.jpg" },
     { nome: "vesguinha", alt: "vesguinha 3", src: "/animais/vesguinha3.jpg" },
   ];
