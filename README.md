@@ -50,10 +50,10 @@ Rodapé com créditos e direitos autorais
 | Fiona 2        | ![Fiona2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/fiona2.jpg)            |
 | Mia 2          | ![Mia2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia2.jpg)                |
 | Mia 3          | ![Mia3](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia3.jpg)                |
-| Mia 4          | ![Mia4](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia4.jpg)                |
-| Mia 6          | ![Mia6](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia6.jpg)                |
-| Mia e Gorducho | ![MiaGorducho](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia_gorducho.jpg) |
-| Vesguinha 1    | ![Vesguinha1](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha1.jpg)    |
-| Vesguinha 2    | ![Vesguinha2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha2.jpg)    |
-| Vesguinha 3    | ![Vesguinha3](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha3.jpg)    |
+| Mia4          | ![Mia4](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia4.jpg)                |
+| Mia6          | ![Mia6](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia6.jpg)                |
+| Mia_Gorducho | ![Mia_Gorducho](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia_gorducho.jpg) |
+| Vesguinha1    | ![Vesguinha1](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha1.jpg)    |
+| Vesguinha2    | ![Vesguinha2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha2.jpg)    |
+| Vesguinha3    | ![Vesguinha3](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha3.jpg)    |
 
