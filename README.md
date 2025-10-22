@@ -1,38 +1,47 @@
-Casa da Thereza Anjo dos Animais
+# 🐾 Casa da Thereza Anjo dos Animais
 
-Bem-vindo ao site oficial da Casa da Thereza Anjo dos Animais, um espaço de amor, cuidado e esperança para nossos amigos de quatro patas 🐾.
+Bem-vindo ao site oficial da **Casa da Thereza Anjo dos Animais**, um espaço de amor, cuidado e esperança para nossos amigos de quatro patas.  
 
-O site apresenta fotos reais dos animais, histórias de resgate, e um layout responsivo e moderno.Acesse online
+O site apresenta **fotos reais dos animais**, histórias de resgate, e um **layout moderno e responsivo**.  
 
-🌟 Ver site ao vivo
+🌟 [Ver site ao vivo](https://casa-thereza-anjo-dos-animais.vercel.app/)
 
-🌿 Instalação e execução local
-1️⃣ Clonar o projetogit clone https://github.com/Emshtml/casa-thereza-anjo-dos-animais.git
+---
+
+## 🌿 Instalação e execução local
+
+1️⃣ **Clonar o projeto**  
+
+```bash
+git clone https://github.com/Emshtml/casa-thereza-anjo-dos-animais.git
 cd casa-thereza-anjo-dos-animais
-No celular: baixe o .zip e extraia os arquivos.Instalar dependências npm install
-Rodar o servidor local
+Instalar dependências
+npm install
+Rodar servidor local
 npm run dev
-Estrutura do projeto
+Abra o navegador em http://localhost:3000
+.Estrutura do projeto
 /public
    /animais       → Fotos dos animais
-/components      → Componentes reutilizáveis (Layout.js, Header.js, etc.)
-/pages           → Páginas do site (index.js, outras páginas)
-styles           → CSS e configurações do Tailwind
+/components      → Componentes reutilizáveis (Layout.js, Header.js, Footer.js, etc.)
+/pages           → Páginas do site (index.js, sobre.js, adocao.js, etc.)
+/styles          → CSS e configurações do Tailwind
 next.config.js   → Configuração do Next.js
 package.json     → Dependências e scripts do projeto
-Tecnologias utilizadas
+postcss.config.js → Configuração do PostCSS
+tailwind.config.js → Configuração do Tailwind
+🛠 Tecnologias utilizadas
 
-Next.js – SSR, SSG, React moderno
-
-Tailwind CSS – Estilização responsiva e rápida
+Next.js – SSR, SSG e React moderno
 
 React – Biblioteca de UI
+
+Tailwind CSS – Estilização responsiva rápida
 
 Node.js – Ambiente de execução
 
 Vercel – Deploy contínuo gratuito
 Funcionalidades
-
 Grid responsivo com cards de animais
 
 Efeitos de hover em cards e imagens
@@ -44,16 +53,8 @@ Layout responsivo desktop e mobile
 Botão para ver todos os animais
 
 Rodapé com créditos e direitos autorais
-| Animal         | Foto                                                                                                                         |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Fiona 1        | ![Fiona1](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/fiona1.jpg)            |
-| Fiona 2        | ![Fiona2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/fiona2.jpg)            |
-| Mia 2          | ![Mia2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia2.jpg)                |
-| Mia 3          | ![Mia3](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia3.jpg)                |
-| Mia4          | ![Mia4](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia4.jpg)                |
-| Mia6          | ![Mia6](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia6.jpg)                |
-| Mia_Gorducho | ![Mia_Gorducho](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/mia_gorducho.jpg) |
-| Vesguinha1    | ![Vesguinha1](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha1.jpg)    |
-| Vesguinha2    | ![Vesguinha2](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha2.jpg)    |
-| Vesguinha3    | ![Vesguinha3](https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/vesguinha3.jpg)    |
+📌 Contato e Redes Sociais
+
+Instagram: @casadatherezaong
+
 
