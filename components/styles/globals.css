@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 /* ==========================================================
-   🌈 Tema Leve — Casa Thereza Anjo dos Animais
+   🌈 Tema Profissional — Casa Thereza Anjo dos Animais
    ========================================================== */
 
 :root {
   --font-main: 'Inter', sans-serif;
   --font-title: 'Poppins', sans-serif;
+  --color-primary: #2D8F6C;
+  --color-secondary: #F5A623;
+  --color-accent: #FFF8F1;
+  --color-text: #1F2937;
+  --color-light: #FFFFFF;
 }
 
 /* ===== Corpo geral ===== */
 body {
   font-family: var(--font-main);
-  background-color: #fffaf2; /* tom amarelado suave */
-  color: #1f2937; /* cinza escuro */
+  background-color: var(--color-accent);
+  color: var(--color-text);
   scroll-behavior: smooth;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ===== Títulos ===== */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
-  color: #92400e; /* tom âmbar escuro */
+  color: var(--color-primary);
 }
 
 /* ===== Imagens ===== */
@@ -39,26 +44,26 @@ img:hover {
 }
 
 /* ===== Botões ===== */
-button {
+button, .btn {
   font-weight: 600;
   border-radius: 0.75rem;
   transition: all 0.2s ease-in-out;
 }
 
-button:hover {
+button:hover, .btn:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
 
 /* ===== Links ===== */
 a {
-  color: #2563eb;
+  color: var(--color-primary);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 
@@ -66,9 +71,11 @@ a:hover {
 footer {
   background-color: #fef3c7;
   color: #6b7280;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-/* ===== Grid de animais ===== */
+/* ===== Grid de Animais ===== */
 .card-animal {
   border-radius: 1rem;
   overflow: hidden;
@@ -80,6 +87,34 @@ footer {
 .card-animal:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Seções ===== */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ===== Containers centralizados ===== */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ===== Texto ===== */
+.text-center {
+  text-align: center;
+}
+
+.text-green-primary {
+  color: var(--color-primary);
+}
+
+.text-amber-secondary {
+  color: var(--color-secondary);
 }
 
 
