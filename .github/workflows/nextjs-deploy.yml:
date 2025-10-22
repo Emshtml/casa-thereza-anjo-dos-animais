@@ -1,0 +1,33 @@
+name: Build and Deploy Next.js
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Faz checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Configura Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 3️⃣ Instala dependências
+      - name: Install dependencies
+        run: npm install
+
+      # 4️⃣ Roda build do Next.js
+      - name: Build project
+        run: npm run build
+
+      # 5️⃣ (Opcional) Testa se o build foi bem-sucedido
+      - name: Run Next.js dev server check
+        run: npm run dev &
