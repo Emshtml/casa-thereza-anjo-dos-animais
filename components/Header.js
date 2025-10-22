@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
 
         {/* Menu de navegação */}
-        <nav className="hidden sm:flex space-x-6 text-white font-medium">
+        <nav className="hidden sm:flex space-x-6 text-white font-medium items-center">
           <Link href="/" className="hover:text-yellow-200 transition-colors">
             Início
           </Link>
@@ -36,6 +36,16 @@ export default function Header() {
           <Link href="/contato" className="hover:text-yellow-200 transition-colors">
             Contato
           </Link>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/casadatherezaong?igsh=aTgwOHVoZ2FyaGE3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-400 transition-colors"
+          >
+            Instagram
+          </a>
         </nav>
       </div>
     </header>
